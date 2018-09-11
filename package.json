@@ -1,0 +1,27 @@
+{
+  "name": "date-ranger",
+  "version": "1.0.0",
+  "description": "date range builder for javaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "npx nodemon --exec npx babel-node -- src/index.js",
+    "build": "babel src -d dist",
+    "mocha": "mocha --no-deprecation --compilers js:babel-register --recursive",
+    "test": "npm run mocha ./test/"
+  },
+  "author": "itsTarik <tarik.lefi@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.2",
+    "@babel/node": "^7.0.0-rc.2",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.24.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3"
+  }
+}
